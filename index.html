@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;padding: 0;
+			}
+			#box{
+				width: 330px;
+				height: 330px;
+				margin: 150px auto;
+			}
+			#box img{
+				width: 100px;
+				height: 100px;
+			}
+			#idx{
+				width: 50%;
+				height: 50%;
+				background: #ccc;
+				font-size: 25px;
+				line-height: 50px;
+				margin: 0 auto;
+			}
+			#overBox{
+				width: 700px;
+				height: 700px;
+				background: black;
+				color: white;
+				font-size: 30px;
+				font-weight: 900;
+				line-height:250px ;
+				text-align: center;
+				position: fixed;
+				top: 120px;
+				left: 35%;
+				display: none;//元素隐藏
+			}
+		</style>
+		<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<marquee><h1>打鼠宝宝</h1></marquee>
+		<div id="box">
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+			<img  src="img/5.jpg"/>
+		</div>
+		<p id="idx">得分：0</p>
+		
+		<div id="overBox"> Game over! <br/> 点击重新开始</div>
+		<audio id="bgMusic" autoplay="autoplay" loop="loop" src="mp3/bg.mp3"></audio>
+		<audio id="yxMusic" autoplay="autoplay" src="mp3/go.mp3" ></audio>
+	</body>
+</html>
